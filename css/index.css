@@ -5,26 +5,27 @@
  *
  * 三国杀传奇递推页css
  * ========================================================== */
-
-body {
-  background-color: #1b0c35;
-  color: #fff;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 .role {
-  width: 100%;
-  height: 877px;
-  border: 3px solid black;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;/* px */
+  margin: 10px;
 }
 .role-1 {
   overflow: hidden;
-  width: 100%;
+  width: 400px;
   height: 350px;
-  background: url(../i/role_1.jpg?__sprite);
   margin: 5px 8px 0 6px;
+  background-color: #1b0c35;
 }
 
-.footer span {
+.role-1 span {
   font-size: 12px;/* px */
   line-height: 27px;
+  color: #fff;
 }

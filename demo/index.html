@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="yes" name="apple-touch-fullscreen"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+  <title>rem demo</title>
+  <link rel="stylesheet" href="../output/index.css">
+</head>
+<body>
+  <div class="role"></div>
+  <div class="role-1">
+    <span>rem test</span>
+  </div>
+  <script type="text/javascript">
+  // 解决iphone 1px细边框的问题
+  var ua = navigator.userAgent.toLowerCase();
+  if (/iphone|ipad|ipod/.test(ua)) {
+    var sc = 1 / window.devicePixelRatio;
+    document.getElementsByName('viewport')[0].content = 'initial-scale='+ sc +', maximum-scale='+ sc +', minimum-scale='+ sc +', user-scalable=no';
+  }
+
+  var pxUnit = 100;     // 在px2rem中预设rem的值 即 1rem = ? px
+  var designWid = 750;  // 设计稿宽度
+  var winWid = document.body.clientWidth;
+  var winHei = document.body.clientHeight;
+  var bl = winWid / designWid;
+  document.querySelector('html').style.fontSize = (bl * pxUnit) + 'px';
+
+  </script>
+</body>
+</html>
