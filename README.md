@@ -2,6 +2,8 @@
 
 本人非常感谢qpwoeiru96对于本项目的大力支持。
 
+本人非常感谢[顾长风](http://git.oschina.net/surprise)对于本项目的大力有情赞助。
+
 一款css的批量转换工具，可以将css中的为px单位属性批量转成rem单位。
 
 ## 使用场景
