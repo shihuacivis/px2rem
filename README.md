@@ -1,4 +1,6 @@
-# px2rem
+# px2rem 
+
+本人非常感谢qpwoeiru96对于本项目的大力支持。
 
 一款css的批量转换工具，可以将css中的为px单位属性批量转成rem单位。
 
